@@ -13,6 +13,7 @@ export default class AddTodos extends Component{
   }
 
   handleSubmit=(e)=>{
+      console.log("e: ",e)
     e.preventDefault();
    this.props.addTodos(this.state);
    document.querySelector('form').reset();
